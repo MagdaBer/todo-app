@@ -3,7 +3,7 @@ import TaskForm from "./addTaskForm.html";
 
 export default {
   title: "Components/TaskForm",
-  parameters: { layout: "centered" },
+  parameters: { layout: "fullscreen" },
 };
 
 export const addTaskForm = () => TaskForm;

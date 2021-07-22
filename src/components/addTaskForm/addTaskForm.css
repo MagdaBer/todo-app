@@ -1,0 +1,47 @@
+.add-task-wrapper {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.description {
+  font-family: var(--ff-primary);
+}
+
+#entertask {
+  display: block;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+#entertask::placeholder {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-primary);
+  color: var(--clr-text-primary);
+  opacity: 21%;
+}
+input:focus {
+  outline: none;
+}
+fieldset {
+  border: 0;
+  background-color: var(--clr-content-passive);
+}
+input[value] {
+  display: none;
+}
+.button {
+  background-color: var(--clr-primary);
+  border: 0;
+  font-weight: var(--fw-primary);
+  font-size: 1.25rem;
+  color: var(--clr-content-passive);
+}
