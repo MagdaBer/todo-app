@@ -1,16 +1,8 @@
-.add-task-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 100vh;
-  width: 100vw;
-}
-
 .taskformular {
-  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100vh;
 }
 
 .description {
@@ -36,10 +28,18 @@
 input:focus {
   outline: none;
 }
-.radiobuttons {
-  border: 0;
+.datewrapper {
   background-color: var(--clr-content-passive);
+  display: flex;
+  justify-content: space-around;
+  padding: 1.3em;
 }
+
+fieldset {
+  border: 0;
+  padding-right: 0;
+}
+
 input[value] {
   display: none;
 }
@@ -49,4 +49,7 @@ input[value] {
   font-weight: var(--fw-primary);
   font-size: 1.25rem;
   color: var(--clr-content-passive);
+}
+legend {
+  margin-bottom: 1em;
 }

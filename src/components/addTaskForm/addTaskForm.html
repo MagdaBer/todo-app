@@ -1,17 +1,17 @@
-<div class="add-task-wrapper">
-  <form class="taskformular">
-    <label for="entertask" class="description"
-      >DESCRIPTION<input type="text" id="entertask" placeholder="Enter Task" />
-    </label>
-    <fieldset class="radiobuttons">
-      <legend>WHEN</legend>
+<form class="taskformular">
+  <label for="entertask" class="description"
+    >DESCRIPTION<input type="text" id="entertask" placeholder="Enter Task" />
+  </label>
+  <fieldset>
+    <legend>WHEN</legend>
+    <div class="datewrapper">
       <input type="radio" name="date" id="today" value="today" />
       <label for="today">Today</label>
       <input type="radio" name="date" id="tomorrow" value="tomorrow" />
       <label for="tomorrow">Tomorrow</label>
       <input type="radio" name="date" id="select" value="select" />
       <label for="select">Select Date</label>
-    </fieldset>
-    <button class="button" type="submit">Add Task</button>
-  </form>
-</div>
+    </div>
+  </fieldset>
+  <button class="button" type="submit">Add Task</button>
+</form>
