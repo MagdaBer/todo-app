@@ -1,0 +1,64 @@
+#entertask {
+  display: block;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+#entertask::placeholder {
+  font-weight: var(--fw-primary);
+  color: var(--clr-text-primary);
+  opacity: 21%;
+}
+
+.taskformular {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.description {
+  padding-left: 1rem;
+}
+
+.datewrapper {
+  background-color: var(--clr-content-passive);
+  display: flex;
+  justify-content: space-around;
+  padding: 1.3em;
+}
+
+.button {
+  background-color: var(--clr-primary);
+  border: 0;
+  font-weight: var(--fw-primary);
+  font-size: 1.25rem;
+  color: var(--clr-content-passive);
+  padding: 1.5rem;
+}
+
+fieldset {
+  border: 0;
+  padding-right: 0;
+  padding-left: 1rem;
+}
+
+input[value] {
+  display: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+legend {
+  margin-bottom: 1em;
+}
+
+input[type="radio"]:checked + label {
+  color: var(--clr-primary);
+}
