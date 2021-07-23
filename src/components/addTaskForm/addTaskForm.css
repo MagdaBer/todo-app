@@ -1,11 +1,16 @@
 .add-task-wrapper {
   display: flex;
-}
-
-.container {
-  display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  height: 100vh;
+  width: 100vw;
+}
+
+.taskformular {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .description {
@@ -31,7 +36,7 @@
 input:focus {
   outline: none;
 }
-fieldset {
+.radiobuttons {
   border: 0;
   background-color: var(--clr-content-passive);
 }
