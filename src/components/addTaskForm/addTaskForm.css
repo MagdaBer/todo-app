@@ -6,7 +6,7 @@
 }
 
 .description {
-  font-family: var(--ff-primary);
+  padding-left: 1rem;
 }
 
 #entertask {
@@ -20,7 +20,6 @@
 }
 
 #entertask::placeholder {
-  font-family: var(--ff-primary);
   font-weight: var(--fw-primary);
   color: var(--clr-text-primary);
   opacity: 21%;
@@ -38,6 +37,7 @@ input:focus {
 fieldset {
   border: 0;
   padding-right: 0;
+  padding-left: 1rem;
 }
 
 input[value] {
@@ -52,4 +52,7 @@ input[value] {
 }
 legend {
   margin-bottom: 1em;
+}
+input[type="radio"]:checked + label {
+  color: var(--clr-primary);
 }
