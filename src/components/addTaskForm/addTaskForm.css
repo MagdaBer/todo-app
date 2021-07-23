@@ -1,14 +1,3 @@
-.taskformular {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-}
-
-.description {
-  padding-left: 1rem;
-}
-
 #entertask {
   display: block;
   border-top-style: hidden;
@@ -24,14 +13,32 @@
   color: var(--clr-text-primary);
   opacity: 21%;
 }
-input:focus {
-  outline: none;
+
+.taskformular {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
+
+.description {
+  padding-left: 1rem;
+}
+
 .datewrapper {
   background-color: var(--clr-content-passive);
   display: flex;
   justify-content: space-around;
   padding: 1.3em;
+}
+
+.button {
+  background-color: var(--clr-primary);
+  border: 0;
+  font-weight: var(--fw-primary);
+  font-size: 1.25rem;
+  color: var(--clr-content-passive);
+  padding: 1.5rem;
 }
 
 fieldset {
@@ -43,16 +50,15 @@ fieldset {
 input[value] {
   display: none;
 }
-.button {
-  background-color: var(--clr-primary);
-  border: 0;
-  font-weight: var(--fw-primary);
-  font-size: 1.25rem;
-  color: var(--clr-content-passive);
+
+input:focus {
+  outline: none;
 }
+
 legend {
   margin-bottom: 1em;
 }
+
 input[type="radio"]:checked + label {
   color: var(--clr-primary);
 }
