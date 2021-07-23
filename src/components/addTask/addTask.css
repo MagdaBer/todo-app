@@ -1,0 +1,15 @@
+.tasklist {
+  background-color: var(--clr-content-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+input[value="Task"] {
+  display: none;
+}
+
+input[value="Task"]:checked + label {
+  text-decoration-line: line-through;
+  text-decoration-color: var(--clr-primary);
+}
