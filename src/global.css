@@ -17,6 +17,7 @@
   --clr-text-primary: #393939;
   --clr-text-secondary: #111;
   --clr-content-passive: #d4d4d4;
+  --clr-content-background: hsla(0, 0%, 83%, 0.103);
 
   /* font-weight variables */
   --fw-primary: 400;
