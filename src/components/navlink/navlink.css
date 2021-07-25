@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  flex-direction: row-reverse;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-content-passive);
+  padding: 2em;
+  font-size: 0.8rem;
+}
