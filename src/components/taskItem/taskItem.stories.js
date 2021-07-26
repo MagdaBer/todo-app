@@ -1,6 +1,6 @@
 import "./taskItem.css";
 import taskItemRegular from "./taskItemRegular.html";
-import taskItemDone from ".taskItemDone.html";
+import taskItemDone from "./taskItemDone.html";
 
 export default {
   title: "Components/TaskItem",
