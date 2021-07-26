@@ -2,7 +2,7 @@ import "./taskList.css";
 import TaskList from "./taskList.html";
 
 export default {
-  title: "Components/taskList",
+  title: "Components/TaskList",
   parameters: { layout: "fullscreen" },
 };
 
