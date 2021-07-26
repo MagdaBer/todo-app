@@ -1,0 +1,6 @@
+.tasklist {
+  overflow: auto;
+  padding-left: 1em;
+  padding-top: 4em;
+  background-color: var(--clr-content-background);
+}
