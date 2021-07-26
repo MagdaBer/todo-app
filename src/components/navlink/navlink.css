@@ -6,6 +6,9 @@
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
+.taskNav__link--active {
+  color: var(--clr-primary);
+}
 
 /*
 .navbar {
