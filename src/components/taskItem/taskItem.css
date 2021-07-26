@@ -1,3 +1,19 @@
+.taskItem {
+  display: block;
+}
+.taskItem__checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+
+  /* display: none; ist nicht accesible */
+}
+
+.taskItem__checkbox:checked + .taskItem__labelText {
+  text-decoration: line-through 0.14em var(--clr-primary);
+}
+
+/*
 .tasklist {
   background-color: var(--clr-content-background);
   display: flex;
@@ -18,3 +34,4 @@ input[value="Task"]:checked + label {
   text-decoration-color: var(--clr-primary);
   text-decoration-thickness: 0.2em;
 }
+*/
