@@ -4,7 +4,7 @@ import navlinkactive from "./navlink-active.html";
 
 export default {
   title: "Components/navlink",
-  parameters: { layout: "fullscreen" },
+  parameters: { layout: "centered" },
 };
 
 export const regular = () => navlinkregular;

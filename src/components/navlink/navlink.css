@@ -1,3 +1,13 @@
+.taskNav__link {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  color: var(--clr-text-primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+/*
 .navbar {
   display: flex;
   flex-direction: row-reverse;
@@ -12,3 +22,4 @@ a {
   padding: 2em;
   font-size: 0.8rem;
 }
+*/
