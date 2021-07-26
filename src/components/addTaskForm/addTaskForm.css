@@ -1,4 +1,4 @@
-#entertask {
+input[name="description"] {
   display: block;
   border-top-style: hidden;
   border-right-style: hidden;
@@ -9,20 +9,20 @@
   width: 100%;
 }
 
-#entertask::placeholder {
+input[name="description"]::placeholder {
   font-weight: var(--fw-primary);
   color: var(--clr-text-primary);
   opacity: 21%;
 }
 
-.taskformular {
+.form__user-input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
 }
 
-.description {
+.form__user-input--task {
   padding-left: 1rem;
   font-size: 1rem;
 }
@@ -34,7 +34,7 @@
   padding: 1.3em;
 }
 
-.button {
+.form__submit {
   background-color: var(--clr-primary);
   border: 0;
   font-weight: var(--fw-primary);
@@ -43,11 +43,11 @@
   padding: 1.5rem;
 }
 
-legend {
+.form__user-input--date legend {
   margin-bottom: 1em;
 }
 
-fieldset {
+.form__user-input--date {
   border: 0;
   padding-right: 0;
   padding-left: 1rem;

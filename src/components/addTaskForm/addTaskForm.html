@@ -1,3 +1,33 @@
+<form class="form">
+  <div class="form__user-input">
+    <label class="form__user-input--task"
+      >Description<input
+        type="text"
+        name="description"
+        placeholder="Enter Task"
+    /></label>
+    <fieldset class="form__user-input--date">
+      <legend>When</legend>
+      <label>
+        Today
+        <input type="radio" name="when" id="when_today" />
+      </label>
+      <label>
+        Tomorrow
+        <input type="radio" name="when" id="when_tomorrow" />
+      </label>
+      <label>
+        Select Date
+        <input type="radio" name="when" id="when_select" />
+      </label>
+    </fieldset>
+  </div>
+  <div class="form__submit">
+    <input type="submit" value="Add task" />
+  </div>
+</form>
+
+<!--
 <form class="taskformular">
   <label for="entertask" class="description"
     >DESCRIPTION<input type="text" id="entertask" placeholder="Enter Task" />
@@ -15,3 +45,4 @@
   </fieldset>
   <button class="button" type="submit">Add Task</button>
 </form>
+-->
