@@ -77,3 +77,23 @@ textarea {
 .taskNav__link--active {
   color: var(--clr-primary);
 }
+
+.taskList {
+  grid-column: 2/3;
+  grid-row: span 2;
+  overflow: auto;
+  padding-left: 1em;
+  padding-top: 4em;
+  background-color: var(--clr-content-passive);
+}
+
+.taskItem {
+  display: block;
+  margin-bottom: 2em;
+}
+
+.taskItem__checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
