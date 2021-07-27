@@ -1,9 +1,9 @@
 import "./addTaskForm.css";
-import TaskForm from "./addTaskForm.html";
+import addTaskForm from "./addTaskForm.html";
 
 export default {
-  title: "Components/TaskForm",
+  title: "Components/Forms",
   parameters: { layout: "fullscreen" },
 };
 
-export const addTaskForm = () => TaskForm;
+export const addTask = () => addTaskForm;
