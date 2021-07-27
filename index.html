@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <main class="container">
+      <button aria-label="open menu" class="iconButton menuButton">
+        <img src="src/assets/menu.svg" alt="Menu Icon" />
+      </button>
+      <div class="headerMenu">
+        <h1>Task</h1>
+        <button aria-label="show notifications" class="iconButton">
+          <img src="src/assets/bell.svg" alt="Notification Bell" />
+        </button>
+      </div>
+      <section class="dateSelector">
+        <a class="taskNav__link" href="">Today</a>
+        <a class="taskNav__link" href="">Tomorrow</a>
+        <a class="taskNav__link" href="">This Week</a>
+      </section>
+      <section class="taskList">
+        <label class="taskItem"
+          ><input
+            class="taskItem__checkbox"
+            type="checkbox"
+            name="tasks"
+          /><span class="taskItem__labelText"
+            >Book appointment with Jared</span
+          ></label
+        >
+        <label class="taskItem"
+          ><input
+            class="taskItem__checkbox"
+            type="checkbox"
+            name="tasks"
+          /><span class="taskItem__labelText">Walk the dog</span></label
+        >
+        <label class="taskItem"
+          ><input
+            class="taskItem__checkbox"
+            type="checkbox"
+            name="tasks"
+          /><span class="taskItem__labelText">Eat lunch and walk</span></label
+        >
+        <label class="taskItem"
+          ><input
+            class="taskItem__checkbox"
+            type="checkbox"
+            name="tasks"
+          /><span class="taskItem__labelText"
+            >Cook a delicious dinner</span
+          ></label
+        >
+      </section>
+      <button aria-label="Add new tast" class="actionButton">
+        <img src="src/assets/buttonplus.svg" alt="" />
+      </button>
+    </main>
+  </body>
+</html>
