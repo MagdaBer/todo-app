@@ -1,29 +1,33 @@
-<form class="form">
-  <div class="form__user-input">
-    <label class="form__user-input--task"
-      >Description<input
+<form class="addTaskForm">
+  <section class="addTaskForm__user-input">
+    <label
+      ><span class="addTaskForm__description">Description</span
+      ><input
+        class="addTaskForm__textInput"
         type="text"
         name="description"
         placeholder="Enter Task"
     /></label>
-    <fieldset class="form__user-input--date">
-      <legend>When</legend>
-      <label>
-        Today
-        <input type="radio" name="when" id="when_today" />
-      </label>
-      <label>
-        Tomorrow
-        <input type="radio" name="when" id="when_tomorrow" />
-      </label>
-      <label>
-        Select Date
-        <input type="radio" name="when" id="when_select" />
-      </label>
+    <fieldset class="addTaskForm__fieldset">
+      <legend class="addTaskForm__description">When</legend>
+      <div class="addTaskForm__radioGroup">
+        <label>
+          <input class="addTaskForm__radio" type="radio" name="when" />
+          <span class="addTaskForm__radioLabel">Today</span>
+        </label>
+        <label>
+          <input class="addTaskForm__radio" type="radio" name="when" />
+          <span class="addTaskForm__radioLabel">Tomorrow</span>
+        </label>
+        <label>
+          <input class="addTaskForm__radio" type="radio" name="when" />
+          <span class="addTaskForm__radioLabel">Select Date</span>
+        </label>
+      </div>
     </fieldset>
-  </div>
-  <div class="form__submit">
-    <input type="submit" value="Add task" />
+  </section>
+  <div>
+    <input class="addTaskForm__submit" type="submit" value="Add task" />
   </div>
 </form>
 
