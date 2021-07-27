@@ -27,6 +27,7 @@
 body {
   font-family: var(--ff-primary);
   margin: 0;
+  height: 100vh;
 }
 
 input,
