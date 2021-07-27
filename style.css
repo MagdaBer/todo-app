@@ -93,6 +93,9 @@ textarea {
   display: block;
   margin-bottom: 2em;
 }
+.taskItem__labelText {
+  font-size: 1.5rem;
+}
 
 .taskItem__checkbox {
   opacity: 0;
