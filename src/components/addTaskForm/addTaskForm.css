@@ -1,70 +1,63 @@
-input[name="description"] {
-  display: block;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  font-size: 3rem;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  width: 100%;
-}
-
-input[name="description"]::placeholder {
-  font-weight: var(--fw-primary);
-  color: var(--clr-text-primary);
-  opacity: 21%;
-}
-
-.form__user-input {
+.addTaskForm {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
 }
 
-.form__user-input--task {
-  padding-left: 1rem;
-  font-size: 1rem;
+.addTaskForm__userInput {
+  margin-left: 1.5em;
 }
 
-.datewrapper {
-  background-color: var(--clr-content-background);
-  display: flex;
-  justify-content: space-around;
-  padding: 1.3em;
+.addTaskForm__description {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 0;
 }
 
-.form__submit {
-  background-color: var(--clr-primary);
-  border: 0;
-  font-weight: var(--fw-primary);
-  font-size: 1.25rem;
+.addTaskForm__textInput {
+  font-size: 2.5rem;
+  padding: 0.5em 0.3em 0.5em 0.1em;
+  max-width: 100%;
+  border: none;
+  border-bottom: 0.1em solid var(--clr-content-passive);
+}
+
+.addTaskForm__textInput::placeholder {
   color: var(--clr-content-passive);
-  padding: 1.5rem;
 }
 
-.form__user-input--date legend {
-  margin-bottom: 1em;
+.addTaskForm__fieldset {
+  border: none;
+  padding: 0;
+  margin: 3em 0 0 0;
 }
 
-.form__user-input--date {
-  border: 0;
-  padding-right: 0;
-  padding-left: 1rem;
+.addTaskForm__radioGroup {
+  border: none;
+  background-color: var(--clr-content-passive);
+  margin-top: 1em;
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-input[type="radio"] {
-  display: none;
+.addTaskForm__radio {
+  width: 0;
+  height: 0;
+  opacity: 0;
 }
 
-input:focus {
-  outline: none;
-}
-
-label {
-  font-size: 0.9rem;
-}
-
-input[type="radio"]:checked + label {
+.addTaskForm__radio:checked + .addTaskForm__radioLabel {
   color: var(--clr-primary);
+}
+
+.addTaskForm__submit {
+  font-size: 1.2rem;
+  border: none;
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--clr-primary);
+  color: #fff;
 }
