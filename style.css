@@ -23,6 +23,27 @@
   --fw-primary: 400;
   --fw-secondary: 600;
 }
+h1 {
+  font-weight: var(--fw-primary);
+  font-size: 3rem;
+}
+h2 {
+  font-weight: var(--fw-primary);
+  font-size: 2rem;
+}
+h3 {
+  font-weight: var(--fw-primary);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+h4 {
+  font-family: var(--ff-secondary), sans-serif;
+  font-weight: var(--fw-primary);
+  font-size: 1rem;
+}
+h6 {
+  font: 400 1rem var(--ff-primary), sans-serif;
+}
 
 body {
   font-family: var(--ff-primary);
@@ -114,4 +135,78 @@ textarea {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.addNewTask__container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1.5fr 5fr;
+}
+.addNewTask__heading {
+  align-self: center;
+  font-size: 2.5rem;
+  padding-left: 1.5rem;
+}
+.addTaskForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.addTaskForm__userInput {
+  margin-left: 1.5em;
+}
+
+.addTaskForm__description {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 0;
+}
+
+.addTaskForm__textInput {
+  font-size: 2.5rem;
+  padding: 0.5em 0.3em 0.5em 0.1em;
+  width: 100%;
+  border: none;
+  border-bottom: 0.1em solid var(--clr-content-passive);
+}
+
+.addTaskForm__textInput::placeholder {
+  color: var(--clr-content-passive);
+}
+
+.addTaskForm__fieldset {
+  border: none;
+  padding: 0;
+  margin: 3em 0 0 0;
+}
+
+.addTaskForm__radioGroup {
+  border: none;
+  background-color: var(--clr-content-passive);
+  margin-top: 1em;
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.addTaskForm__radio {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.addTaskForm__radio:checked + .addTaskForm__radioLabel {
+  color: var(--clr-primary);
+}
+
+.addTaskForm__submit {
+  font-size: 1.2rem;
+  border: none;
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--clr-primary);
+  color: #fff;
 }
