@@ -24,6 +24,7 @@ function createTaskListItem(task) {
   input.className = "taskItem__checkbox";
   input.type = "checkbox";
   input.setAttribute("name", "tasks");
+  input.checked = task.isDone;
 
   const span = document.createElement("span");
   span.className = "taskItem__labelText";
