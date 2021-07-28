@@ -161,7 +161,7 @@ textarea {
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  padding-left: 0.5rem;
+  padding: 0;
 }
 
 .addTaskForm__textInput {
