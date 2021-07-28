@@ -16,4 +16,5 @@ form.onsubmit = function (event) {
   console.log(
     `Hi you entered "${newTask.date}" as date and "${newTask.title}" as description`
   );
+  console.log(newTask);
 };
