@@ -28,7 +28,6 @@ body {
   font-family: var(--ff-primary);
   margin: 0;
   height: 100vh;
-  width: 100vw;
 }
 
 input,
@@ -118,8 +117,7 @@ textarea {
 }
 
 .addNewTask__container {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
   display: grid;
   grid-template-rows: 1.5fr 5fr;
 }
@@ -128,7 +126,6 @@ textarea {
   font-size: 2.5rem;
 }
 .addTaskForm {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -148,7 +145,7 @@ textarea {
 .addTaskForm__textInput {
   font-size: 2.5rem;
   padding: 0.5em 0.3em 0.5em 0.1em;
-  max-width: 100%;
+  width: 100%;
   border: none;
   border-bottom: 0.1em solid var(--clr-content-passive);
 }
