@@ -3,13 +3,17 @@ const form = document.querySelector(".addTaskForm");
 form.onsubmit = function (event) {
   event.preventDefault();
 
+  const newTask = { title: "", date: "", isDone: false };
+
   const checkedDateInput = document.querySelector(
     ".addTaskForm__radio:checked"
   );
   const textInput = document.querySelector(".addTaskForm__textInput");
 
-  const selectedDate = checkeDateInput.value;
-  const taskName = textInput.value;
+  newTask.title = textInput.value;
+  newTask.date = checkedDateInput.value;
 
-  console.log(selectedDate, taskName);
+  console.log(
+    `Hi you entered "${newTask.date}" as date and "${newTask.title} as description`
+  );
 };
