@@ -6,13 +6,17 @@ function sendAlert() {
 }
 
 const taskList = document.querySelector(".taskList");
+const potentialTask = {
+  title: "Get groceries",
+  date: "Tomorrow",
+  isDone: true,
+};
 
-const taskOne = createTaskListItem("Kaffe kochen");
-const taskTwo = createTaskListItem("JavaScript lernen");
+const taskFromObject = createTaskListItem(potentialTask);
 
-taskList.append(taskOne, taskTwo);
+taskList.append(taskFromObject);
 
-function createTaskListItem(taskName) {
+function createTaskListItem(task) {
   const taskListItem = document.createElement("label");
   taskListItem.className = "taskItem";
 
@@ -23,7 +27,7 @@ function createTaskListItem(taskName) {
 
   const span = document.createElement("span");
   span.className = "taskItem__labelText";
-  span.innerText = taskName;
+  span.innerText = task.title;
 
   taskListItem.append(input, span);
 
