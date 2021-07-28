@@ -14,6 +14,6 @@ form.onsubmit = function (event) {
   newTask.date = checkedDateInput.value;
 
   console.log(
-    `Hi you entered "${newTask.date}" as date and "${newTask.title} as description`
+    `Hi you entered "${newTask.date}" as date and "${newTask.title}" as description`
   );
 };
