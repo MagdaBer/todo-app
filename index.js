@@ -14,20 +14,20 @@ const tasks = [
     isDone: true,
   },
   {
-    title: "Get groceries",
-    date: "Tomorrow",
-    isDone: true,
+    title: "Walk the dog",
+    date: "Today",
+    isDone: false,
   },
   {
-    title: "Get groceries",
-    date: "Tomorrow",
-    isDone: true,
+    title: "Go to sleep",
+    date: "Today",
+    isDone: false,
   },
 ];
 
-const taskFromObject = createTaskListItem(potentialTask);
+const taskListItems = tasks.map((task) => createTaskListItem(task));
 
-taskList.append(taskFromObject);
+taskList.append(...taskListItems);
 
 function createTaskListItem(task) {
   const taskListItem = document.createElement("label");
