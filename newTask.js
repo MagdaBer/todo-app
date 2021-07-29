@@ -1,3 +1,8 @@
+import {
+  parseJSONFromLocalStorage,
+  stingifyJSONToLocalStorage,
+} from ".utils/localStorage.js";
+
 const form = document.querySelector(".addTaskForm");
 
 form.onsubmit = function (event) {
