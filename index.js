@@ -6,11 +6,24 @@ function sendAlert() {
 }
 
 const taskList = document.querySelector(".taskList");
-const potentialTask = {
-  title: "Get groceries",
-  date: "Tomorrow",
-  isDone: true,
-};
+
+const tasks = [
+  {
+    title: "Get groceries",
+    date: "Tomorrow",
+    isDone: true,
+  },
+  {
+    title: "Get groceries",
+    date: "Tomorrow",
+    isDone: true,
+  },
+  {
+    title: "Get groceries",
+    date: "Tomorrow",
+    isDone: true,
+  },
+];
 
 const taskFromObject = createTaskListItem(potentialTask);
 
