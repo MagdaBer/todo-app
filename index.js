@@ -6,15 +6,28 @@ function sendAlert() {
 }
 
 const taskList = document.querySelector(".taskList");
-const potentialTask = {
-  title: "Get groceries",
-  date: "Tomorrow",
-  isDone: true,
-};
 
-const taskFromObject = createTaskListItem(potentialTask);
+const tasks = [
+  {
+    title: "Get groceries",
+    date: "Tomorrow",
+    isDone: true,
+  },
+  {
+    title: "Walk the dog",
+    date: "Today",
+    isDone: false,
+  },
+  {
+    title: "Go to sleep",
+    date: "Today",
+    isDone: false,
+  },
+];
 
-taskList.append(taskFromObject);
+const taskListItems = tasks.map((task) => createTaskListItem(task));
+
+taskList.append(...taskListItems);
 
 function createTaskListItem(task) {
   const taskListItem = document.createElement("label");
