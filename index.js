@@ -1,3 +1,5 @@
+import { parseJSONFromLocalStorage } from "/utils/localStorage.js";
+
 const menuButton = document.querySelector(".menuButton");
 menuButton.onclick = sendAlert;
 
@@ -7,23 +9,7 @@ function sendAlert() {
 
 const taskList = document.querySelector(".taskList");
 
-const tasks = [
-  {
-    title: "Get groceries",
-    date: "Tomorrow",
-    isDone: true,
-  },
-  {
-    title: "Walk the dog",
-    date: "Today",
-    isDone: false,
-  },
-  {
-    title: "Go to sleep",
-    date: "Today",
-    isDone: false,
-  },
-];
+const tasks = parseJSONFromLocalStorage("tasks", []);
 
 const taskListItems = tasks.map((task) => createTaskListItem(task));
 
