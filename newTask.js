@@ -23,9 +23,9 @@ form.onsubmit = function (event) {
   );
   console.log(newTask);
 
-  const oldTask = parseJSONFromLocalStorage("tasks", []);
+  const oldTasks = parseJSONFromLocalStorage("tasks", []);
 
-  const tasks = [...oldTask, newTask];
+  const newTasks = [...oldTasks, newTask];
 
-  stringifyJSONToLocalStorage("tasks", tasks);
+  stringifyJSONToLocalStorage("tasks", newTasks);
 };
