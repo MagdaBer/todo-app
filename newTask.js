@@ -28,4 +28,6 @@ form.onsubmit = function (event) {
   const newTasks = [...oldTasks, newTask];
 
   stringifyJSONToLocalStorage("tasks", newTasks);
+
+  location.href = "/";
 };
