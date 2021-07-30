@@ -1,7 +1,7 @@
 import {
+  stringifyJSONToLocalStorage,
   parseJSONFromLocalStorage,
-  stingifyJSONToLocalStorage,
-} from ".utils/localStorage.js";
+} from "/utils/localStorage.js";
 
 const form = document.querySelector(".addTaskForm");
 
@@ -22,4 +22,10 @@ form.onsubmit = function (event) {
     `Hi you entered "${newTask.date}" as date and "${newTask.title}" as description`
   );
   console.log(newTask);
+
+  const oldTask = parseJSONFromLocalStorage("tasks", []);
+
+  const tasks = [...oldTask, newTask];
+
+  stringifyJSONToLocalStorage("tasks", tasks);
 };
