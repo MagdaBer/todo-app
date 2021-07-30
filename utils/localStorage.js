@@ -8,7 +8,7 @@ export function parseJSONFromLocalStorage(key, defaultValue) {
   return data;
 }
 
-export function stingifyJSONToLocalStorage(key, value) {
+export function stringifyJSONToLocalStorage(key, value) {
   const json = JSON.stringify(value);
 
   localStorage.setItem(key, json);
