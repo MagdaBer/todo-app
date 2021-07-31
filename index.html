@@ -19,9 +19,33 @@
         </button>
       </div>
       <section class="dateSelector">
-        <a class="taskNav__link" href="">Today</a>
-        <a class="taskNav__link" href="">Tomorrow</a>
-        <a class="taskNav__link" href="">This Week</a>
+        <label>
+          <input
+            class="taskNav__radio"
+            type="radio"
+            name="when"
+            value="today"
+          />
+          <span class="taskNav__radioLabel">Today</span>
+        </label>
+        <label>
+          <input
+            class="taskNav__radio"
+            type="radio"
+            name="when"
+            value="tomorrow"
+          />
+          <span class="taskNav__radioLabel">Tomorrow</span>
+        </label>
+        <label>
+          <input
+            class="taskNav__radio"
+            type="radio"
+            name="when"
+            value="This Week"
+          />
+          <span class="taskNav__radioLabel">This Week</span>
+        </label>
       </section>
       <section class="taskList"></section>
       <button aria-label="Add new tast" class="actionButton">
