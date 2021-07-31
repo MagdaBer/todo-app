@@ -89,7 +89,13 @@ textarea {
   grid-row: span 2;
   place-items: center;
 }
-.taskNav__link {
+.taskNav__radio {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.taskNav__radioLabel {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   color: var(--clr-text-primary);
@@ -97,7 +103,8 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
-.taskNav__link--active {
+
+.taskNav__radio:checked + .taskNav__radioLabel {
   color: var(--clr-primary);
 }
 
