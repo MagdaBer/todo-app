@@ -33,3 +33,27 @@ function createTaskListItem(task) {
 
   return taskListItem;
 }
+
+const dateFilter = document.querySelectorAll(".taskNav__radio");
+dateFilter.forEach(function (selectdate) {
+  selectdate.addEventListener("click", function () {
+    const day = this.getAttribute("value");
+    if (day === "today") {
+      const today = tasks.filter((task) => task.date === "today");
+      const taskListItemstoday = today.map((task) => createTaskListItem(task));
+      while (taskList.hasChildNodes()) {
+        taskList.removeChild(taskList.firstChild);
+      }
+      taskList.append(...taskListItemstoday);
+    } else if (day === "tomorrow") {
+      const tomorrow = tasks.filter((task) => task.date === "tomorrow");
+      const taskListItemstomorrow = tomorrow.map((task) =>
+        createTaskListItem(task)
+      );
+      while (taskList.hasChildNodes()) {
+        taskList.removeChild(taskList.firstChild);
+      }
+      taskList.append(...taskListItemstomorrow);
+    }
+  });
+});
